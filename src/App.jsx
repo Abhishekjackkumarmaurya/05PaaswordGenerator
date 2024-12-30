@@ -29,7 +29,7 @@ function App() {
   const copyPasswordToClipBoard = useCallback(()=>{
     passportRef.current?.select()
 
-    passportRef.current?.setSelectionRange(0, 20) // to set how long you pass want to copy
+    // passportRef.current?.setSelectionRange(0, 20) // to set how long you pass want to copy
 
     window.navigator.clipboard.writeText(Password)
   },
